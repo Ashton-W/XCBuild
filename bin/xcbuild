@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'xcbuild'
+require 'xcpretty'
+require 'optparse'
+require 'yaml'
+
+
