@@ -11,8 +11,9 @@ require 'optparse'
 #   determine workspace
 #   determine target/scheme
 #   determine sdk
+#   passthrough
 #  xcpretty
-#   passthrough 
+#   passthrough
 
 # xcodebuild | xcpretty
 
@@ -21,5 +22,10 @@ pretty_opts = '-c'
 
 puts build_opts
 
-system "xcodebuild #{build_opts} | xcpretty #{pretty_opts} && exit ${PIPESTATUS[0]}"
+system [
+  "xcodebuild #{build_opts} ",
+  "| xcpretty #{pretty_opts} ",
+  '&& exit ${PIPESTATUS[0]}'
+].join
+
 # it works!!!
