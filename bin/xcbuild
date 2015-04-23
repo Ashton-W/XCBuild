@@ -3,6 +3,23 @@
 require 'xcbuild'
 require 'xcpretty'
 require 'optparse'
-require 'yaml'
 
+# read .xcbuild file
 
+#  xcodebuild
+#   determine project
+#   determine workspace
+#   determine target/scheme
+#   determine sdk
+#  xcpretty
+#   passthrough 
+
+# xcodebuild | xcpretty
+
+build_opts = ARGV.join(' ')
+pretty_opts = '-c'
+
+puts build_opts
+
+system "xcodebuild #{build_opts} | xcpretty #{pretty_opts} && exit ${PIPESTATUS[0]}"
+# it works!!!

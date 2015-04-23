@@ -1,0 +1,6 @@
+---
+workspace: Fixture.xcworkspace
+scheme: Fixture
+xcpretty:
+	build: -c
+	test : -c -t
