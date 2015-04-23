@@ -1,0 +1,4 @@
+---
+xcpretty:
+  build: -c
+  test : -c -t
