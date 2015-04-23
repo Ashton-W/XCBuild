@@ -1,7 +1,7 @@
 # XCBuild
 
 Run `xcodebuild` with arguments read from a configuration file in the local directory: `.xcbuild.yml`.
-Format the output with `xcpretty`, and you have a modern and pretty `xcodebuild`.
+Format the output with [`xcpretty`](https://github.com/supermarin/xcpretty), and you have a modern and pretty `xcodebuild`.
 
 ## Installation
 
@@ -13,5 +13,5 @@ Format the output with `xcpretty`, and you have a modern and pretty `xcodebuild`
 
 ## Thanks
 
-- @supermarin for xcpretty
-- @fpotter for xctool
+- [Marin Usalj](https://github.com/supermarin) for [xcpretty](https://github.com/supermarin/xcpretty)
+- [Fred Potter](http://github.com/fpotter) for [xctool](https://github.com/facebook/xctool)
